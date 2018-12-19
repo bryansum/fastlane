@@ -130,7 +130,7 @@ module Pilot
     end
 
     def self.truncate_changelog(changelog)
-      max_changelog_length = 4000
+      max_changelog_length = 3600
       if changelog && changelog.length > max_changelog_length
         original_length = changelog.length
         bottom_message = "..."
